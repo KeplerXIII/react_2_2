@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { CardRender } from './components/store/store'
+import { ProductCardList } from './components/store/store'
 
 function App() {
   const [state, setState] = useState('view_module')
@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <button className="material-icons" onClick={clickHandler}> {state} </button>
-      <CardRender style={state}/>
+      <ProductCardList style={state}/>
     </div>
   )
 }
